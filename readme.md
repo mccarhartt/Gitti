@@ -10,7 +10,7 @@ Tein tehtävä 1.
 
 Tein tehtävät 1, 2, 3, 4 ja 6. 
 
-En osannut tehdä tetävä 6.
+En osannut tehdä tetävä 5.
 
 ## Moduuli 3 
 
