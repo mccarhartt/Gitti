@@ -1,9 +1,7 @@
-#Kirjoita ohjelma, joka kysyy vuosiluvun ja ilmoittaa, onko annettu vuosi karkausvuosi. Vuosi on karkausvuosi, jos se on jaollinen neljällä. Sadalla jaolliset vuodet ovat karkausvuosia vain jos ne ovat jaollisia myös neljälläsadalla.
-vuosi=int(input("vuosi: "))
-if vuosi % 400 == 0:
-    print("vuosi on karkausvuosi")
-else: 
-    if vuosi % 4 == 0:
-        print("vuosi on karkausvuosi")
-    else:
-        print("vuosi ei ole karkausvuosi")
+#Kirjoita ohjelma, joka kysyy kolme kokonaislukua. Ohjelma tulostaa lukujen summan, tulon ja keskiarvon.
+luku1=int(input("luku1: "))
+luku2=int(input("luku2: "))
+luku3=int(input("luku3: "))
+print(luku1+luku2+luku3)
+print(luku1*luku2*luku3)
+print((luku1+luku2+luku3)/3)

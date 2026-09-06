@@ -1,5 +1,5 @@
-#Kirjoita ohjelma, joka kysyy kalastajalta kuhan pituuden senttimetreinä. Jos kuha on alamittainen, ohjelma käskee laskea kuhan takaisin järveen ilmoittaen samalla käyttäjälle, montako senttiä alimmasta sallitusta pyyntimitasta puuttuu. Kuha on alamittainen, jos sen pituus on alle 37 cm.
-pituus=int(input("pituus: "))
-era=37-pituus
-if pituus < 37:
-    print(f"kala on {era} cm pienempi")
+#Kirjoita ohjelma, joka kysyy nimesi ja sen jälkeen tervehtii sinua omalla nimelläsi. Esimerkkejä:
+#Jos syötät nimeksesi Viivi, ohjelma tervehtii sinua sanoin Terve, Viivi!
+#Jos syötät nimeksesi Ahmed, ohjelma tervehtii sinua sanoin Terve, Ahmed!
+name = input("anna nimesi: \n")
+print(f"Terve, {name}!")
