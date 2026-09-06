@@ -21,3 +21,9 @@ Tein tehtävät 1, 2, 3 ja 4.
 Tein tehtävät 1, 2, 4 ja 5.
 
 En osannut tehdä tetävä 3 ja en ymmärryt tehtävä 6.
+
+## Moduuli 6
+
+Tein tehtävät 1, 2 ja 4.
+
+En osannut tehdä tetävä 3 .
