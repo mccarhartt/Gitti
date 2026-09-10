@@ -5,6 +5,5 @@ def luku():
 while True:
     luku1 = luku()
     print(luku1)
-
     if luku1 == 6:
         break
