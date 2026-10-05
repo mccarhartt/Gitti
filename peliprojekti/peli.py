@@ -62,16 +62,16 @@ class Esine:
 #Intro and instructions
 
 def intro():
-    polku = os.path.join(os.path.dirname(__file__), "intro.txt")
+    path = os.path.join(os.path.dirname(__file__), "intro.txt")
 
-    with open(polku, "r", encoding="utf-8") as tiedosto:
+    with open(path, "r") as tiedosto:
         return tiedosto.read()
 
 
 def ohjeet():
-    polku = os.path.join(os.path.dirname(__file__), "ohjeet.txt")
+    path = os.path.join(os.path.dirname(__file__), "ohjeet.txt")
 
-    with open(polku, "r", encoding="utf-8") as tiedosto:
+    with open(path, "r") as tiedosto:
         return tiedosto.read()
 
 #saving
