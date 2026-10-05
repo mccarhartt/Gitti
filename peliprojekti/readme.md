@@ -1,2 +1,2 @@
-pelin nimi
-Daniil Shirpakov
+pelin nimi on Find them all
+tekija on Daniil Shirpakov

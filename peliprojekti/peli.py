@@ -1,3 +1,5 @@
+import os
+
 class Pelaaja:
 
     def __init__(self, nimi, sijainti):
@@ -60,11 +62,16 @@ class Esine:
 #Intro and instructions
 
 def intro():
-    with open("intro.txt", "r") as tiedosto:
+    polku = os.path.join(os.path.dirname(__file__), "intro.txt")
+
+    with open(polku, "r", encoding="utf-8") as tiedosto:
         return tiedosto.read()
 
+
 def ohjeet():
-    with open("ohjeet.txt", "r") as tiedosto:
+    polku = os.path.join(os.path.dirname(__file__), "ohjeet.txt")
+
+    with open(polku, "r", encoding="utf-8") as tiedosto:
         return tiedosto.read()
 
 #saving
@@ -111,9 +118,9 @@ def load_game(pelaaja, huoneet, kaikki_esineet):
                 if rivi == "":
                     break
 
-#load player*s inventory
+#load player's inventory
                 for esine in kaikki_esineet:
-                    if rivi ==esine.nimi:
+                    if rivi == esine.nimi:
                         pelaaja.esineet.append(esine)
 
 #delete items, which player already took from the room
@@ -170,8 +177,6 @@ else:
     while True:
         print("\n=== MAIN MENU ===")
 
-        print(f"Your current location is {pelaaja.sijainti.nimi}")
-
         print("1. Current room")
         print("2. Take item")
         print("3. Check inventory")
@@ -219,7 +224,6 @@ else:
             print(ohjeet())
 
         elif komento == "end":
-            save_game(pelaaja, kaikki_huoneet)
             print("Thank you for game!")
             print("See you next time!")
             break
