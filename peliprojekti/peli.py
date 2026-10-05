@@ -59,20 +59,13 @@ class Esine:
 
 #Intro and instructions
 
-def lue_tiedosto(tiedostonimi):
+def intro():
+    with open("intro.txt", "r") as tiedosto:
+        return tiedosto.read()
 
-    try:
-        with open(tiedostonimi, "r") as tiedosto:
-            return tiedosto.read()
-
-    except:
-        return ""
-
-def nayta_intro():
-    print(lue_tiedosto("intro.txt"))
-
-def nayta_ohjeet():
-    print(lue_tiedosto("ohjeet.txt"))
+def ohjeet():
+    with open("ohjeet.txt", "r") as tiedosto:
+        return tiedosto.read()
 
 #saving
     
@@ -97,7 +90,7 @@ def save_game(pelaaja, huoneet):
 def load_game(pelaaja, huoneet, kaikki_esineet):
 
     try:
-        with open("talennus.txt", "r") as tiedosto:
+        with open("saving.txt", "r") as tiedosto:
 #load player*s name
             nimi = tiedosto.readline()[:-1]
 #load player*s location
@@ -152,7 +145,7 @@ kaikki_huoneet = [basketball_court, football_field, volleyball_court]
 
 #start game
 
-nayta_intro()
+print(intro())
 
 nimi = input("Your name: ")
 ika = int(input("Your age: "))
@@ -171,7 +164,7 @@ else:
         print(f"Welcome back!")
 
     else:
-        print(f"Welcome to the ne game!")
+        print(f"Welcome to the new game!")
 
 #main menu 
     while True:
@@ -223,7 +216,7 @@ else:
             save_game(pelaaja, kaikki_huoneet)
 
         elif komento == "6":
-            nayta_ohjeet()
+            print(ohjeet())
 
         elif komento == "end":
             save_game(pelaaja, kaikki_huoneet)
@@ -232,6 +225,6 @@ else:
             break
 
         else:
-            print("Tuntematon komento.")
+            print("Unknown command")
 
 

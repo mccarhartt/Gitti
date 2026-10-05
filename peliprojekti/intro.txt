@@ -2,7 +2,7 @@
         Find them all!
 ================================
 
-TWelcome to the Find them all game!
+Welcome to the Find them all game!
 
 You have arrived at an old sports center
 where balls are scattered everywhere.
