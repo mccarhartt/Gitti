@@ -1,5 +1,5 @@
 ================================
-          OHJEET
+          INSTRUCTIONS
 ================================
 
 1 = Check your current location
