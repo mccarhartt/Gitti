@@ -1,1 +1,16 @@
-xxx
+================================
+          OHJEET
+================================
+
+1 = Check your current location
+2 = Take item from the room
+3 = Check your own inventory
+4 = Move to the next room
+5 = Save game
+6 = Check Instructions
+end = Save game and quit
+
+You can save game at any moment
+If you log into the game using 
+the same name, the game will 
+resume from the same point.

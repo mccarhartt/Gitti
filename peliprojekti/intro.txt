@@ -1,1 +1,13 @@
-zzz
+================================
+        Find them all!
+================================
+
+TWelcome to the Find them all game!
+
+You have arrived at an old sports center
+where balls are scattered everywhere.
+
+To complete the game, 
+you need to collect them all.
+
+Have a good game!

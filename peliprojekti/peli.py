@@ -66,7 +66,6 @@ def lue_tiedosto(tiedostonimi):
             return tiedosto.read()
 
     except:
-        print(f"Tiedosto {tiedostonimi} ei löytyny.")
         return ""
 
 def nayta_intro():
@@ -186,9 +185,9 @@ else:
         print("4. Change room")
         print("5. Save game")
         print("6. View instructions")
-        print("lopeta - Lopeta peli")
+        print("end - Save game and quit")
 
-        komento = input("Valitse toiminto: ")
+        komento = input("Choose the action: ")
 
         if komento == "1":
 
@@ -206,9 +205,9 @@ else:
 
             print("\nWhere you want to move?")
 
-            print("1. Eteinen")
-            print("2. Kirjasto")
-            print("3. AArrehuone")
+            print("1. Basketball court")
+            print("2. Football field")
+            print("3. Volleyball court")
 
             kohde = input("Choose the room: ")
 
@@ -226,7 +225,8 @@ else:
         elif komento == "6":
             nayta_ohjeet()
 
-        elif komento == "lopeta":
+        elif komento == "end":
+            save_game(pelaaja, kaikki_huoneet)
             print("Thank you for game!")
             print("See you next time!")
             break
